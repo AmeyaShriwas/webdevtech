@@ -1,40 +1,127 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { AppProvider } from '@toolpad/core/AppProvider';
-import { DashboardLayout } from '@toolpad/core/DashboardLayout';
-import NAVIGATION from './Navigation';
-import demoTheme from './Theme';
-import DemoPageContent from './DemoPageContent';
-import { useDemoRouter } from '@toolpad/core/internal';
-import Typography from '@mui/material/Typography';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Box,
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import SettingsIcon from "@mui/icons-material/Settings";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import NAVIGATION from "./Navigation";
+import DemoPageContent from "./DemoPageContent";
 
+const drawerWidth = 240;
 
-function DashboardLayoutBranding(props) {
-  const { window } = props;
-  const router = useDemoRouter('/dashboard');
-  const demoWindow = window !== undefined ? window() : undefined;
+function DashboardLayout({ window }) {
+  const [selectedPage, setSelectedPage] = useState("/course-overview");
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const handleNavigation = (segment) => {
+    console.log('se', segment)
+    setSelectedPage(segment);
+    if (isMobile) {
+      setMobileOpen(false); // Close sidebar on mobile after selecting a menu item
+    }
+  };
 
   return (
-    <AppProvider
-      navigation={NAVIGATION}
-      branding={{
-        logo: <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'blue' }}></Typography>,
-        title: 'Webdevtech',
-        homeUrl: '/dashboard',
-      }}
-      router={router}
-      theme={demoTheme}
-      window={demoWindow}
-    >
-      <DashboardLayout>
-        <DemoPageContent />
-      </DashboardLayout>
-    </AppProvider>
+    <Box sx={{ display: "flex", height: "100vh", overflow: "hidden" }}>
+      {/* App Header */}
+      <AppBar position="fixed" sx={{ zIndex: 1300, bgcolor: "white" }}>
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+          {/* Left Section - Logo & Name */}
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <IconButton color="black" onClick={handleDrawerToggle}>
+              <MenuIcon />
+            </IconButton>
+            <Typography  sx={{ ml: 2, fontWeight: "bold", color:'black' }}>
+              WEBDEVTECH
+            </Typography>
+          </Box>
+
+          {/* Right Section - Settings & Profile */}
+          <Box>
+            <IconButton color="black">
+              <SettingsIcon />
+            </IconButton>
+            <IconButton color="black">
+              <AccountCircleIcon />
+            </IconButton>
+          </Box>
+        </Toolbar>
+      </AppBar>
+
+      {/* Sidebar Navigation (Responsive) */}
+      <Drawer
+        variant={isMobile ? "temporary" : "permanent"}
+        open={isMobile ? mobileOpen : true}
+        onClose={handleDrawerToggle}
+        sx={{
+          display: isMobile ? (mobileOpen ? "block" : "none") : "block",
+          width: drawerWidth,
+          flexShrink: 0,
+          "& .MuiDrawer-paper": {
+            width: drawerWidth,
+            boxSizing: "border-box",
+            transition: "width 0.3s ease-in-out",
+            overflowX: "hidden",
+          },
+        }}
+      >
+        <Toolbar /> {/* Adds spacing below the header */}
+        <List>
+          {NAVIGATION.map((item, index) =>
+            item.kind === "header" ? (
+              <Typography key={index} sx={{ px: 2, mt: 2, fontWeight: "bold" }}>
+                {item.title}
+              </Typography>
+            ) : item.kind === "divider" ? (
+              <hr key={index} style={{ margin: "10px 0" }} />
+            ) : (
+              <ListItem
+                button
+                key={item.segment}
+                selected={selectedPage === item.segment}
+                onClick={() => handleNavigation(item.segment)}
+                sx={{
+                  "&.Mui-selected": { backgroundColor: "#1976d2", color: "white" },
+                }}
+              >
+                <ListItemIcon>{item.icon}</ListItemIcon>
+                <ListItemText primary={item.title} />
+              </ListItem>
+            )
+          )}
+        </List>
+      </Drawer>
+
+      {/* Main Content (Demo Page) */}
+      <Box sx={{ flexGrow: 1, p: 3, mt: 8 }}>
+        <DemoPageContent selectedPage={selectedPage} />
+      </Box>
+    </Box>
   );
 }
 
-DashboardLayoutBranding.propTypes = {
+DashboardLayout.propTypes = {
   window: PropTypes.func,
 };
 
-export default DashboardLayoutBranding;
+export default DashboardLayout;
