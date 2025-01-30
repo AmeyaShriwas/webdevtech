@@ -1,0 +1,240 @@
+{
+  "JavaScript Topics": {
+    "Introduction": [
+      "An Introduction to JavaScript",
+      "Introduction to JS",
+      "JS Syntax",
+      "Add JS file in HTML Document",
+      "JS Versions",
+      "JS Output",
+      "JS Comments",
+      "JS Statements",
+      "JS Events"
+    ],
+    "Variables and Data Types": [
+      "JS Variables",
+      "JS let",
+      "JS const",
+      "JS var",
+      "Difference between var, let, and const keywords in JS",
+      "Global and Local variables in JS",
+      "Access Variables from Another File using JavaScript",
+      "JS Data Types",
+      "JS Type Conversion",
+      "JS Type Coercion",
+      "JS Hoisting"
+    ],
+    "Operators": [
+      "JS Operators",
+      "Operator precedence in JS",
+      "JS Arithmetic Operators",
+      "JS Assignment Operators",
+      "JS Comparison Operators",
+      "JS Logical Operators",
+      "JS Ternary Operators",
+      "JS Bitwise Operators",
+      "JS typeof Operator"
+    ],
+    "Conditional Flow": [
+      "JS Ternary Operator",
+      "JS if-else",
+      "Switch Case in JS"
+    ],
+    "Loops": [
+      "Loops in JS",
+      "JS For Loop",
+      "JS While Loop",
+      "JS for-in Loop",
+      "JS for…of Loop",
+      "JS do…while Loop",
+      "JS Continue Statement",
+      "JS break and continue",
+      "Difference between forEach and for loop in JS"
+    ]
+,
+
+    "Functions Basic Concepts": [
+      "Functions in JS",
+      "How to write a function in JS?",
+      "JS Function Call",
+      "Different ways of writing functions in JS",
+      "Difference between Methods and Functions in JS",
+      "Explain the Different Function States in JS",
+      "Pass by Value and Pass by Reference in JS",
+      "Call by Value Vs Call by Reference in JS",
+      "JS return Statement",
+      "JS Nested functions",
+      "JS Rest parameter",
+      "JS Anonymous Functions",
+      "How to Understand Recursion in JS",
+      "Arrow functions in JS",
+      "JS Function Complete Reference"
+    ]
+,
+
+    "String Operations": [
+      "JS String",
+      "JS String Storage()",
+      "String() Constructor",
+      "Builtin Strings in JS",
+      "Convert String to Camel Case",
+      "Count String Occurrences?",
+      "String Methods",
+      "Join Array Elements into String",
+      "Create String with Multiple Spaces",
+      "Multi-line Strings in JavaScript",
+      "Generate All Combinations of a String",
+      "Create Function from String",
+      "String Reference",
+      "Remove a Character From String in JS",
+      "Extract a Number from a String using JS"
+    ]
+ ,
+
+    "Numbers": [
+      "JS Numbers",
+      "How numbers are stored in JS?",
+      "How to create a Number object using JS",
+      "JS Number Reference"
+    ],
+    "Dates": [
+      "JS Date() Constructor",
+      "JS Date constructor Property",
+      "JS Date now() Method",
+      "JS Date parse() Method",
+      "JS Date UTC() Method",
+      "JS Date getDate() Method",
+      "JS Date getDay() Method",
+      "Check if Date is Today in JS",
+      "Check if Date is Between Two Dates in JS",
+      "JS Date Reference"
+    ]
+,
+
+    "Objects": [
+      "JS Objects",
+      "Creating Objects in JS (4 Different Ways)",
+      "JS JSON Objects",
+      "JS Object Reference",
+      "Push an Array into Object in JS",
+      "Check a Key Exists in JS Object"
+    ],
+    "Arrays": [
+      "Arrays in JS",
+      "Create an array of a given size in JS",
+      "Get the first and last item in an array using JS",
+      "How to append an element in an array in JS?",
+      "Remove elements from a JS Array",
+      "JS Basic Array Methods",
+      "Best-Known JS Array Methods",
+      "What are the Important Array Methods of JS?",
+      "JS Array Reference",
+      "Remove Duplicate Elements From JS Array",
+      "Filter Object Array Based On Attributes",
+      "Add an Object to JS Array",
+      "JS Multidimensional Array",
+      "JS Array forEach() Method",
+      "ArrayMap() Method In JS",
+      "ArrayFilter() Method In JS",
+      "ArrayReduce() Method In JS"
+    ]
+ ,
+
+    "Promises and Async/Await": [
+      "Promises in JS",
+      "JS Promise",
+      "JS promise resolve() Method",
+      "JS Promise all() Method",
+      "JS Promise then() Method",
+      "JS Promise any() Method",
+      "JS Promise race() Method",
+      "JS promise reject() Method",
+      "Promise vs Callback in JS",
+      "Callbacks vs Promises vs Async/Await",
+      "JS Async/Await Function"
+    ],
+    "Event Loop": [
+      "Understanding the Event Loop",
+      "Call Stack, Web APIs, Callback Queue",
+      "Microtasks vs Macrotasks",
+      "SetTimeout, SetInterval, and their Effects on Event Loop"
+    ],
+    "Classes and OOP": [
+      "Classes In JS",
+      "Classes and Objects in JS",
+      "How to create a JS class in ES6",
+      "this Keyword JS",
+      "New Keyword in JS",
+      "Object Constructor in JS",
+      "Inheritance in JS",
+      "Encapsulation in JS",
+      "Static Methods In JS",
+      "OOP in JS",
+      "Getter and Setter in JS"
+    ]
+ ,
+
+    "Client-Side Storage": [
+      "Local Storage in JS",
+      "Session Storage in JS",
+      "Difference between Local Storage , Session and cookies",
+      "JSON Web Token (JWT)"
+    ],
+    "Debugging and Error Handling": [
+      "JS Errors Throw and Try to Catch",
+      "Console in JS",
+      "Debugging in JS",
+      "Why we cannot catch error outside of function in JS?",
+      "Unexpected token error for catch JS",
+      "How to increase multiple try-catch readability in JS?",
+      "JS Error Handling: Unexpected Token"
+    ],
+    "HTTP Methods and API": [
+      "Put v/s Patch",
+      "Fetch API in JS",
+      "Use JavaScript Fetch API to Get Data",
+      "Make ajax call from JavaScript",
+      "Wait for an API Request to Return in JS"
+    ],
+    "Regular Expressions": [
+      "JS RegExp() Constructor",
+      "JS RegExp constructor Property",
+      "JS RegExp dotAll Property",
+      "JS RegExp flags Property",
+      "JS RegExp global Property",
+      "JS RegExp hasIndices Property",
+      "JS RegExp exec() Method",
+      "JS RegExp test() Method",
+      "JS RegExp toString() Method",
+      "JS RegExp Reference",
+      "JS RegExp(Regular Expression)"
+    ],
+    "Math and BigInt": [
+      "Use of Math object in JS",
+      "JS Math Object",
+      "JS Math E Property",
+      "JS Math LN2 Property",
+      "JS Math LN10 Property",
+      "JS Math LOG2E Property",
+      "JS Math LOG10E Property",
+      "JS Math PI Property",
+      "JS Math abs() Method",
+      "JS Math acos() Method",
+      "JS Math acosh() Method",
+      "JS Math asin() Method",
+      "JS Math asinh() Method",
+      "JS Math atan() Method",
+      "JS Math atan2() Method",
+      "JS Math Reference",
+      "JS BigInt",
+      "JS BigInt() constructor",
+      "JS BigInt constructor Property",
+      "JS BigInt asIntN() Method",
+      "JS BigInt asUintN() Method",
+      "JS BigInt toLocaleString() Method",
+      "JS BigInt toString() Method",
+      "JS BigInt valueOf() Method",
+      "JS BigInt Reference"
+    ]
+  }
+}

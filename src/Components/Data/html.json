@@ -1,0 +1,71 @@
+{
+  "HTML Topics": {
+    "Introduction": [
+      "What is HTML?",
+      "History of HTML",
+      "HTML Syntax",
+      "Basic Structure of an HTML Document",
+      "HTML Tags and Attributes",
+      "HTML vs XHTML",
+      "How Browsers Render HTML"
+    ],
+    "HTML Elements": [
+      "HTML Headings",
+      "HTML Paragraphs",
+      "HTML Links",
+      "HTML Images",
+      "HTML Lists (Ordered and Unordered)",
+      "HTML Tables",
+      "HTML Forms",
+      "HTML Buttons",
+      "HTML Block and Inline Elements",
+      "HTML Nested Elements"
+    ],
+    "HTML5 Features": [
+      "New Elements in HTML5",
+      "HTML5 Semantic Elements",
+      "HTML5 Forms and Input Types",
+      "HTML5 Audio and Video",
+      "HTML5 Canvas",
+      "HTML5 SVG",
+      "HTML5 Web Storage (Local and Session Storage)",
+      "HTML5 Web Workers",
+      "HTML5 Geolocation API",
+      "HTML5 History API",
+      "HTML5 Offline Applications"
+    ],
+    "Advanced HTML": [
+      "HTML Entities",
+      "HTML Iframes",
+      "HTML Accessibility (ARIA)",
+      "HTML Microdata",
+      "HTML Geolocation",
+      "HTML Drag and Drop",
+      "HTML Custom Data Attributes",
+      "HTML Templates",
+      "HTML Shadow DOM",
+      "HTML Forms Validation"
+    ],
+    "CSS Integration": [
+      "Internal CSS vs External CSS",
+      "Inline CSS",
+      "Linking CSS to HTML",
+      "CSS Selectors and Properties",
+      "CSS Specificity",
+      "Responsive Design with CSS",
+      "CSS Grid and Flexbox",
+      "CSS Variables",
+      "CSS Animations and Transitions"
+    ],
+    "Best Practices": [
+      "Writing Semantic HTML",
+      "Organizing HTML Code",
+      "HTML Optimization Techniques",
+      "Common HTML Mistakes to Avoid",
+      "Testing HTML in Different Browsers",
+      "SEO-Friendly HTML Practices",
+      "Using HTML Validators",
+      "Performance Optimization in HTML"
+    ]
+  }
+}

@@ -14,8 +14,9 @@ const NAVIGATION = [
   { kind: "divider" },
 
   { kind: "header", title: "Web Development" },
-  { segment: "/html-css", title: "HTML & CSS", icon: <WebIcon /> },
-  { segment: "/javascript", title: "JavaScript", icon: <CodeIcon /> },
+  { segment: "/html", title: "HTML", icon: <WebIcon /> },
+  { segment: "/css", title: "CSS", icon: <WebIcon /> },
+  { segment: "/javascript", title: "Javascript", icon: <CodeIcon /> },
   { segment: "/react", title: "React.js", icon: <NextWeekIcon /> },
   { segment: "/node-express", title: "Node & Express", icon: <StorageIcon /> },
   {

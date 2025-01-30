@@ -1,0 +1,165 @@
+{
+  "CSS Topics": {
+    "Introduction to CSS": [
+      "What is CSS?",
+      "Why use CSS?",
+      "CSS Syntax",
+      "Types of CSS (Inline, Internal, External)",
+      "CSS Selectors Overview"
+    ],
+    "CSS Syntax and Selectors": [
+      "CSS Selectors (Universal, Type, Class, ID)",
+      "Combinators (Descendant, Child, Sibling)",
+      "Attribute Selectors",
+      "Pseudo-classes",
+      "Pseudo-elements"
+    ],
+    "CSS Box Model": [
+      "Content Area",
+      "Padding",
+      "Border",
+      "Margin",
+      "Box-sizing Property"
+    ],
+    "CSS Colors and Backgrounds": [
+      "Color Methods (Hex, RGB, RGBA, HSL)",
+      "Background Properties",
+      "Gradient Backgrounds",
+      "Background Images",
+      "Shorthand Background Property"
+    ],
+    "CSS Fonts and Text": [
+      "Font Family",
+      "Font Size and Style",
+      "Text Alignment",
+      "Text Decoration",
+      "Text Transformation"
+    ],
+    "CSS Margins, Padding, and Borders": [
+      "Margin Property",
+      "Padding Property",
+      "Border Property",
+      "Shorthand Properties",
+      "Setting Borders for Elements"
+    ],
+    "CSS Positioning": [
+      "Static Positioning",
+      "Relative Positioning",
+      "Absolute Positioning",
+      "Fixed Positioning",
+      "Sticky Positioning"
+    ],
+    "CSS Display Property": [
+      "Block and Inline Elements",
+      "Display: None",
+      "Display: Flex",
+      "Display: Grid",
+      "Other Values (Inline-block, Table, etc.)"
+    ],
+    "CSS Flexbox": [
+      "Flex Container",
+      "Flex Items",
+      "Align-items and Justify-content",
+      "Flex-direction",
+      "Flex-wrap"
+    ],
+    "CSS Grid Layout": [
+      "Grid Container",
+      "Grid Items",
+      "Grid Template Columns and Rows",
+      "Grid Gaps",
+      "Aligning Grid Items"
+    ],
+    "CSS Media Queries": [
+      "What are Media Queries?",
+      "Using Media Queries for Responsive Design",
+      "Media Query Syntax",
+      "Targeting Devices",
+      "Mobile-first Design"
+    ],
+    "CSS Transitions": [
+      "Transition Property",
+      "Transition Timing Functions",
+      "Transition Duration and Delay",
+      "Transition Shorthand",
+      "Examples of CSS Transitions"
+    ],
+    "CSS Animations": [
+      "Keyframes",
+      "Animation Property",
+      "Animation Duration and Timing Functions",
+      "Animation Iteration Count",
+      "Animation Shorthand"
+    ],
+    "CSS Variables": [
+      "What are CSS Variables?",
+      "Declaring Variables",
+      "Using Variables",
+      "Inheritance with Variables",
+      "Fallback Values for Variables"
+    ],
+    "CSS Pseudo-classes": [
+      "Hover, Active, Focus",
+      "nth-child, nth-of-type",
+      "First-child, Last-child",
+      "Checked, Disabled, Valid, Invalid",
+      "Pseudo-classes for Links"
+    ],
+    "CSS Pseudo-elements": [
+      "Before and After Pseudo-elements",
+      "First-letter and First-line",
+      "Content Property with Pseudo-elements",
+      "Styling with Pseudo-elements",
+      "Common Uses of Pseudo-elements"
+    ],
+    "CSS Specificity and Inheritance": [
+      "Specificity Rules",
+      "Selector Specificity Hierarchy",
+      "Cascading Order",
+      "Inheritance in CSS",
+      "Overriding Styles"
+    ],
+    "CSS Responsive Design": [
+      "Mobile-First Approach",
+      "Fluid Layouts",
+      "Responsive Typography",
+      "Responsive Images",
+      "Media Queries in Detail"
+    ],
+    "CSS Frameworks": [
+      "Overview of CSS Frameworks",
+      "Bootstrap Introduction",
+      "Grid System in Bootstrap",
+      "Tailwind CSS Basics",
+      "Comparison of CSS Frameworks"
+    ],
+    "Advanced CSS Techniques": [
+      "Clip-path Property",
+      "CSS Filters",
+      "Advanced Background Techniques",
+      "Custom Properties and Functions",
+      "CSS Masks"
+    ],
+    "CSS Preprocessors": [
+      "Introduction to Sass and LESS",
+      "Variables in Sass and LESS",
+      "Nesting Rules",
+      "Mixins and Functions",
+      "Compiling Sass and LESS"
+    ],
+    "CSS Best Practices": [
+      "Naming Conventions (BEM)",
+      "Organizing CSS Files",
+      "Avoiding Over-specificity",
+      "Optimizing Performance",
+      "Using Vendor Prefixes"
+    ],
+    "CSS Troubleshooting and Debugging": [
+      "Debugging Tools (Chrome DevTools)",
+      "Common CSS Mistakes",
+      "Fixing Layout Issues",
+      "Working with Flexbox and Grid",
+      "Debugging Specificity Problems"
+    ]
+  }
+}

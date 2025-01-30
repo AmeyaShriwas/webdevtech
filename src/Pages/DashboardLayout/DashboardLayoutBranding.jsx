@@ -44,7 +44,13 @@ function DashboardLayout({ window }) {
   return (
     <Box sx={{ display: "flex", height: "100vh", overflow: "hidden" }}>
       {/* App Header */}
-      <AppBar position="fixed" sx={{ zIndex: 1300, bgcolor: "white" }}>
+      <AppBar
+        position="fixed"
+        sx={{
+          zIndex: 1300,
+          bgcolor: "white",
+          boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)",
+        }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           {/* Left Section - Logo & Name */}
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -57,14 +63,14 @@ function DashboardLayout({ window }) {
           </Box>
 
           {/* Right Section - Settings & Profile */}
-          <Box>
+          {/* <Box>
             <IconButton color="black">
               <SettingsIcon />
             </IconButton>
             <IconButton color="black">
               <AccountCircleIcon />
             </IconButton>
-          </Box>
+          </Box> */}
         </Toolbar>
       </AppBar>
 
