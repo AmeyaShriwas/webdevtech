@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Box,
   Typography,
@@ -25,7 +25,7 @@ function TopicPage({ jsonData, title }) {
   const handleClick = (topic) => {
     const selected = jsonData[topic];
     setSelectedTopic({ selected, title: topic });
-    setIsTopicSelected(true); // Set topic as selected
+    setIsTopicSelected(true);
   };
 
   const handleModalOpen = (subTopic) => {
@@ -50,7 +50,7 @@ function TopicPage({ jsonData, title }) {
   };
 
   const handleBack = () => {
-    setIsTopicSelected(false); // Unselect the topic and show all topics again
+    setIsTopicSelected(false);
     setSelectedTopic(null);
   };
 
@@ -74,7 +74,7 @@ function TopicPage({ jsonData, title }) {
       </Typography>
 
       {isTopicSelected ? (
-        <Box sx={{ marginBottom: 3, position:'relative' }}>
+        <Box sx={{ marginBottom: 3, position: "relative" }}>
           <IconButton
             onClick={handleBack}
             sx={{
@@ -83,9 +83,7 @@ function TopicPage({ jsonData, title }) {
               right: 0,
               color: "white",
               backgroundColor: "grey",
-              "&:hover": {
-                backgroundColor: "#e0e0e0",
-              },
+              "&:hover": { backgroundColor: "#e0e0e0" },
             }}>
             <Close />
           </IconButton>
@@ -99,7 +97,7 @@ function TopicPage({ jsonData, title }) {
             }}>
             {selectedTopic.title}
           </Typography>
-          <Grid container spacing={1}>
+          <Grid container spacing={2}>
             {selectedTopic.selected &&
               selectedTopic.selected.map((subTopic, idx) => (
                 <Grid item xs={6} sm={4} md={3} key={idx}>
@@ -108,11 +106,15 @@ function TopicPage({ jsonData, title }) {
                     sx={{
                       borderRadius: 2,
                       boxShadow: 2,
-                      p: 1,
-                      backgroundColor: "white",
+                      height: 100,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                     }}>
-                    <CardContent sx={{ p: 1 }}>
-                      <Typography variant="body2" sx={{ fontSize: 14 }}>
+                    <CardContent sx={{ p: 1, textAlign: "center" }}>
+                      <Typography
+                        variant="body2"
+                        sx={{ fontSize: 14, fontWeight: "bold" }}>
                         {subTopic}
                       </Typography>
                     </CardContent>
@@ -122,7 +124,7 @@ function TopicPage({ jsonData, title }) {
           </Grid>
         </Box>
       ) : (
-        <Grid container spacing={1}>
+        <Grid container spacing={2}>
           {jsonData &&
             Object.keys(jsonData).map((topic) => (
               <Grid item xs={6} sm={4} md={3} key={topic}>
@@ -132,14 +134,15 @@ function TopicPage({ jsonData, title }) {
                     cursor: "pointer",
                     borderRadius: 2,
                     boxShadow: 2,
-                    "&:hover": {
-                      boxShadow: 6,
-                    },
-                    backgroundColor: "white",
-                    p: 1, // smaller padding for compact size
+                    height: 100,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
                   }}>
-                  <CardContent sx={{ p: 1 }}>
-                    <Typography variant="body2" sx={{ fontSize: 14 }}>
+                  <CardContent sx={{ p: 1, textAlign: "center" }}>
+                    <Typography
+                      variant="body2"
+                      sx={{ fontSize: 14, fontWeight: "bold" }}>
                       {topic}
                     </Typography>
                   </CardContent>
