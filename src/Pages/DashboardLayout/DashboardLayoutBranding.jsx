@@ -51,7 +51,7 @@ function DashboardLayout({ window }) {
             <IconButton color="black" onClick={handleDrawerToggle}>
               <MenuIcon />
             </IconButton>
-            <Typography  sx={{ ml: 2, fontWeight: "bold", color:'black' }}>
+            <Typography sx={{ ml: 2, fontWeight: "bold", color: "black" }}>
               WEBDEVTECH
             </Typography>
           </Box>
@@ -83,13 +83,20 @@ function DashboardLayout({ window }) {
             transition: "width 0.3s ease-in-out",
             overflowX: "hidden",
           },
-        }}
-      >
+        }}>
         <Toolbar /> {/* Adds spacing below the header */}
         <List>
           {NAVIGATION.map((item, index) =>
             item.kind === "header" ? (
-              <Typography key={index} sx={{ px: 2, mt: 2, fontWeight: "bold" }}>
+              <Typography
+                key={index}
+                style={{
+                  padding: "8px 16px",
+                  marginTop: "10px",
+                  fontWeight: "bold",
+                  fontSize: "14px",
+                }} // Smaller font
+              >
                 {item.title}
               </Typography>
             ) : item.kind === "divider" ? (
@@ -100,12 +107,19 @@ function DashboardLayout({ window }) {
                 key={item.segment}
                 selected={selectedPage === item.segment}
                 onClick={() => handleNavigation(item.segment)}
-                sx={{
-                  "&.Mui-selected": { backgroundColor: "#1976d2", color: "white" },
-                }}
-              >
-                <ListItemIcon>{item.icon}</ListItemIcon>
-                <ListItemText primary={item.title} />
+                style={{
+                  backgroundColor:
+                    selectedPage === item.segment ? "#1976d2" : "transparent",
+                  color: selectedPage === item.segment ? "white" : "inherit",
+                }}>
+                <ListItemIcon style={{ minWidth: "36px" }}>
+                  {item.icon}
+                </ListItemIcon>
+                <ListItemText
+                  primary={
+                    <span style={{ fontSize: "13px" }}>{item.title}</span>
+                  } // Using span for font size
+                />
               </ListItem>
             )
           )}
