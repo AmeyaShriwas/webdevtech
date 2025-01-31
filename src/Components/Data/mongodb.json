@@ -1,0 +1,130 @@
+{
+  "MongoDB Topics": {
+    "Introduction to MongoDB": [
+      "What is MongoDB?",
+      "SQL vs NoSQL Databases",
+      "Advantages of Using MongoDB",
+      "MongoDB Architecture",
+      "Understanding BSON (Binary JSON)",
+      "Installing and Setting Up MongoDB",
+      "MongoDB Compass Overview"
+    ],
+    "MongoDB Basics": [
+      "Understanding Databases, Collections, and Documents",
+      "MongoDB Data Types",
+      "CRUD Operations (Create, Read, Update, Delete)",
+      "MongoDB Query Syntax",
+      "MongoDB Shell Commands",
+      "Working with ObjectIds"
+    ],
+    "Data Modeling in MongoDB": [
+      "Schema Design Best Practices",
+      "Embedding vs Referencing Documents",
+      "One-to-One, One-to-Many, Many-to-Many Relationships",
+      "Using Schema Validation",
+      "Indexing and Performance Optimization"
+    ],
+    "Advanced Queries in MongoDB": [
+      "Filtering with Query Operators",
+      "Sorting and Pagination",
+      "Projection in Queries",
+      "Aggregation Framework",
+      "Working with Pipelines",
+      "Group, Match, Sort, Limit, and Lookup Stages"
+    ],
+    "Indexes in MongoDB": [
+      "What is Indexing?",
+      "Creating and Managing Indexes",
+      "Single Field vs Compound Indexes",
+      "Text Indexes for Full-Text Search",
+      "Geospatial Indexing",
+      "Performance Optimization with Indexes"
+    ],
+    "Aggregation Framework": [
+      "Understanding Aggregation",
+      "Aggregation Stages and Operators",
+      "Grouping and Transforming Data",
+      "Using $lookup for Joins",
+      "Pipeline Optimization Techniques"
+    ],
+    "MongoDB Transactions": [
+      "Understanding Transactions in NoSQL",
+      "Single vs Multi-Document Transactions",
+      "Atomicity and ACID Compliance in MongoDB",
+      "Implementing Transactions with MongoDB"
+    ],
+    "MongoDB Security": [
+      "User Authentication and Role-Based Access Control",
+      "Encrypting Data at Rest and In Transit",
+      "Preventing Injection Attacks",
+      "Auditing and Logging",
+      "Security Best Practices"
+    ],
+    "Working with MongoDB in Node.js": [
+      "Connecting MongoDB with Node.js",
+      "Using Mongoose ORM",
+      "CRUD Operations with Mongoose",
+      "Schema and Model Creation",
+      "Working with Virtuals and Middleware",
+      "Mongoose Population (Joins)"
+    ],
+    "MongoDB Atlas (Cloud Database)": [
+      "Introduction to MongoDB Atlas",
+      "Setting Up a Cluster in MongoDB Atlas",
+      "Connecting to MongoDB Atlas from an Application",
+      "Backup and Restore in MongoDB Atlas",
+      "Performance Monitoring in MongoDB Atlas"
+    ],
+    "Replication and High Availability": [
+      "Understanding Replication",
+      "Setting Up Replica Sets",
+      "Failover Mechanism",
+      "Read and Write Operations in Replica Sets",
+      "Monitoring Replica Set Performance"
+    ],
+    "Sharding and Scalability": [
+      "What is Sharding?",
+      "Sharding vs Replication",
+      "Configuring Sharded Clusters",
+      "Shard Keys and Choosing the Right One",
+      "Scaling MongoDB Horizontally"
+    ],
+    "Backup and Recovery": [
+      "MongoDB Backup Strategies",
+      "Using mongodump and mongorestore",
+      "Point-in-Time Recovery",
+      "Automated Backup with MongoDB Atlas"
+    ],
+    "MongoDB Performance Optimization": [
+      "Profiling and Monitoring Queries",
+      "Analyzing Query Execution Plans",
+      "Reducing Memory Usage",
+      "Improving Performance with Indexing",
+      "Avoiding Common Performance Pitfalls"
+    ],
+    "MongoDB and Big Data": [
+      "Integrating MongoDB with Hadoop",
+      "Using MongoDB with Apache Spark",
+      "Handling Large Datasets Efficiently",
+      "Real-Time Analytics with MongoDB"
+    ],
+    "Real-World Applications and Use Cases": [
+      "MongoDB for E-Commerce Platforms",
+      "Using MongoDB in IoT Applications",
+      "Building Real-Time Applications with MongoDB",
+      "MongoDB in Microservices Architecture"
+    ],
+    "Testing and Debugging": [
+      "Unit Testing with Jest and MongoDB",
+      "Integration Testing for MongoDB APIs",
+      "Debugging MongoDB Performance Issues",
+      "Logging and Monitoring MongoDB"
+    ],
+    "Deploying MongoDB": [
+      "Deploying MongoDB on AWS, Azure, and GCP",
+      "Dockerizing MongoDB",
+      "Kubernetes Deployment for MongoDB",
+      "CI/CD Pipelines for MongoDB Applications"
+    ]
+  }
+}

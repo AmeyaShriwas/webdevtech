@@ -17,14 +17,19 @@ const NAVIGATION = [
   { segment: "/html", title: "HTML", icon: <WebIcon /> },
   { segment: "/css", title: "CSS", icon: <WebIcon /> },
   { segment: "/javascript", title: "Javascript", icon: <CodeIcon /> },
-  { segment: "/react", title: "React.js", icon: <NextWeekIcon /> },
+  { segment: "/react", title: "React", icon: <NextWeekIcon /> },
   { segment: "/node-express", title: "Node & Express", icon: <StorageIcon /> },
   {
-    segment: "/mongodb-mysql",
-    title: "MongoDB & MySQL",
+    segment: "/mongodb",
+    title: "MongoDB",
     icon: <StorageIcon />,
   },
-  { segment: "/nextjs", title: "Next.js", icon: <NextWeekIcon /> },
+  {
+    segment: "/mysql",
+    title: "MySQL",
+    icon: <StorageIcon />,
+  },
+  { segment: "/nextjs", title: "Next", icon: <NextWeekIcon /> },
 
   { kind: "divider" },
 
@@ -35,20 +40,7 @@ const NAVIGATION = [
     icon: <MobileFriendlyIcon />,
   },
 
-  { kind: "divider" },
-
-  { kind: "header", title: "User Settings" },
-  { segment: "/profile", title: "View Profile", icon: <PersonIcon /> },
-  {
-    segment: "/account-settings",
-    title: "Account Settings",
-    icon: <SettingsIcon />,
-  },
-  {
-    segment: "/privacy-settings",
-    title: "Privacy Settings",
-    icon: <SecurityIcon />,
-  },
+  
 ];
 
 export default NAVIGATION;

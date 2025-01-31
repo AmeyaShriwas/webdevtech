@@ -1,0 +1,128 @@
+{
+  "React Topics": {
+    "Introduction to React": [
+      "What is React?",
+      "History and Evolution of React",
+      "Why Use React?",
+      "React vs Other Frontend Frameworks",
+      "Setting Up a React Development Environment",
+      "Understanding JSX",
+      "React Components and Props"
+    ],
+    "React Components": [
+      "Functional Components",
+      "Class Components",
+      "Component Lifecycle Methods",
+      "React Hooks Overview",
+      "useState Hook",
+      "useEffect Hook",
+      "useRef Hook",
+      "useContext Hook",
+      "useReducer Hook",
+      "Custom Hooks"
+    ],
+    "React State Management": [
+      "Understanding State in React",
+      "Props vs State",
+      "Lifting State Up",
+      "React Context API",
+      "Redux Introduction",
+      "Redux Store, Actions, and Reducers",
+      "Redux Middleware (Thunk & Saga)",
+      "React-Redux Integration",
+      "Zustand for State Management",
+      "Recoil for State Management"
+    ],
+    "React Routing": [
+      "React Router Introduction",
+      "Setting Up React Router",
+      "Nested Routes",
+      "Dynamic Routing",
+      "Protected Routes",
+      "Navigation and Redirects",
+      "Lazy Loading with React Router"
+    ],
+    "React Forms and Validation": [
+      "Controlled vs Uncontrolled Components",
+      "Handling Forms in React",
+      "Form Validation with HTML5",
+      "Form Validation with Libraries (Formik, Yup, React Hook Form)",
+      "Handling File Uploads"
+    ],
+    "React Styling": [
+      "CSS Modules",
+      "Styled Components",
+      "Tailwind CSS with React",
+      "Material-UI",
+      "Ant Design",
+      "SASS/SCSS with React"
+    ],
+    "React Performance Optimization": [
+      "React Memoization (React.memo, useMemo, useCallback)",
+      "Lazy Loading and Code Splitting",
+      "Virtualization with React-Window",
+      "Optimizing Rerenders",
+      "Using React Profiler"
+    ],
+    "React and API Handling": [
+      "Fetching Data with Fetch API",
+      "Using Axios for API Calls",
+      "Handling API Responses and Errors",
+      "Working with RESTful APIs",
+      "GraphQL with React (Apollo Client)",
+      "WebSockets and Real-Time Data"
+    ],
+    "Advanced React Concepts": [
+      "Higher-Order Components (HOC)",
+      "Render Props Pattern",
+      "Portals in React",
+      "Error Boundaries",
+      "React Fragments",
+      "Strict Mode in React",
+      "Concurrent Mode and Suspense",
+      "React Server Components"
+    ],
+    "State Management Alternatives": [
+      "MobX for State Management",
+      "Zustand vs Redux",
+      "Recoil vs Context API",
+      "React Query for Data Fetching"
+    ],
+    "React Testing": [
+      "Introduction to React Testing",
+      "Unit Testing with Jest",
+      "Testing Components with React Testing Library",
+      "End-to-End Testing with Cypress",
+      "Mocking API Calls in Tests"
+    ],
+    "Next.js (React Framework)": [
+      "Introduction to Next.js",
+      "Pages and Routing in Next.js",
+      "Static Site Generation (SSG)",
+      "Server-Side Rendering (SSR)",
+      "Incremental Static Regeneration (ISR)",
+      "API Routes in Next.js",
+      "Styling in Next.js",
+      "Authentication in Next.js (NextAuth.js)"
+    ],
+    "React Native (for Mobile Apps)": [
+      "Introduction to React Native",
+      "React Native vs React.js",
+      "Setting Up a React Native Project",
+      "React Native Components",
+      "Handling Navigation in React Native",
+      "Using APIs in React Native",
+      "React Native Styling",
+      "State Management in React Native"
+    ],
+    "Best Practices": [
+      "Component Structure and Folder Organization",
+      "Reusability and Modularization",
+      "Optimizing Large-Scale React Apps",
+      "Debugging React Applications",
+      "SEO Best Practices in React",
+      "Accessibility in React Apps",
+      "Deploying React Applications (Vercel, Netlify, Firebase, AWS)"
+    ]
+  }
+}

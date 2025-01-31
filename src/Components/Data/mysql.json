@@ -1,0 +1,144 @@
+{
+  "MySQL Topics": {
+    "Introduction to MySQL": [
+      "What is MySQL?",
+      "SQL vs NoSQL Databases",
+      "Advantages of MySQL",
+      "MySQL Architecture",
+      "Installing MySQL on Windows, macOS, and Linux",
+      "MySQL Workbench and Command Line Client Overview",
+      "Connecting to MySQL Database"
+    ],
+    "MySQL Basics": [
+      "Understanding Databases, Tables, and Records",
+      "Data Types in MySQL",
+      "Creating, Selecting, and Using Databases",
+      "Creating and Managing Tables",
+      "Inserting, Updating, and Deleting Data",
+      "Retrieving Data with SELECT Queries",
+      "MySQL Constraints (Primary Key, Foreign Key, Unique, Not Null, Check)"
+    ],
+    "MySQL Querying and Filtering Data": [
+      "Using WHERE Clause for Filtering Data",
+      "Using ORDER BY for Sorting Results",
+      "Using LIMIT and OFFSET for Pagination",
+      "LIKE Operator and Wildcards for Pattern Matching",
+      "IN and NOT IN Operators",
+      "BETWEEN Operator",
+      "IS NULL and IS NOT NULL Conditions"
+    ],
+    "Joins in MySQL": [
+      "Understanding Joins in SQL",
+      "INNER JOIN",
+      "LEFT JOIN (LEFT OUTER JOIN)",
+      "RIGHT JOIN (RIGHT OUTER JOIN)",
+      "FULL JOIN (FULL OUTER JOIN) - Alternative in MySQL",
+      "SELF JOIN",
+      "CROSS JOIN",
+      "Using Joins with Multiple Tables"
+    ],
+    "Aggregations and Grouping Data": [
+      "GROUP BY Clause",
+      "HAVING Clause",
+      "Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)",
+      "Using GROUP_CONCAT for Concatenating Results"
+    ],
+    "Subqueries and Advanced Queries": [
+      "What are Subqueries?",
+      "Using Subqueries in SELECT, FROM, and WHERE Clauses",
+      "Correlated Subqueries",
+      "Common Table Expressions (CTEs)",
+      "Recursive Queries"
+    ],
+    "MySQL Views and Indexes": [
+      "Creating and Using Views",
+      "Updating and Dropping Views",
+      "Understanding Indexes",
+      "Creating Indexes for Performance Optimization",
+      "Composite Indexes",
+      "Full-Text Indexes and Searches"
+    ],
+    "Stored Procedures and Functions": [
+      "What are Stored Procedures?",
+      "Creating and Executing Stored Procedures",
+      "Passing Parameters in Stored Procedures",
+      "Using IF, CASE, and Loops in Stored Procedures",
+      "Creating and Using Functions",
+      "Differences Between Stored Procedures and Functions"
+    ],
+    "Triggers and Events in MySQL": [
+      "Understanding Triggers",
+      "Creating and Managing Triggers",
+      "Before and After Triggers",
+      "Using Triggers for Auditing and Automation",
+      "Scheduled Events in MySQL",
+      "Creating and Managing Events"
+    ],
+    "Transactions and ACID Properties": [
+      "What is a Transaction?",
+      "Understanding ACID Properties",
+      "START TRANSACTION, COMMIT, and ROLLBACK",
+      "SAVEPOINT and ROLLBACK TO SAVEPOINT",
+      "Using Transactions with InnoDB Engine"
+    ],
+    "User Management and Security": [
+      "Creating and Managing Users",
+      "Granting and Revoking Permissions",
+      "Roles in MySQL",
+      "Password Policies and Authentication Methods",
+      "Securing MySQL Server"
+    ],
+    "MySQL Performance Optimization": [
+      "Understanding Query Execution Plan (EXPLAIN)",
+      "Optimizing Queries for Performance",
+      "Using Indexes Effectively",
+      "Caching with Query Cache and MySQL Performance Schema",
+      "Partitioning Large Tables",
+      "Optimizing Joins and Subqueries"
+    ],
+    "Backup and Recovery": [
+      "Backing Up Databases with mysqldump",
+      "Restoring Databases from Backup",
+      "Point-in-Time Recovery",
+      "Automated Backup Strategies",
+      "Disaster Recovery Planning"
+    ],
+    "Replication and High Availability": [
+      "What is Replication in MySQL?",
+      "Setting Up Master-Slave Replication",
+      "Master-Master Replication",
+      "Failover and Load Balancing",
+      "Using ProxySQL for Scaling"
+    ],
+    "Sharding and Horizontal Scaling": [
+      "Introduction to Sharding",
+      "Partitioning vs Sharding",
+      "Using MySQL Fabric for Sharding",
+      "Challenges in Sharding"
+    ],
+    "NoSQL Features in MySQL": [
+      "MySQL as a Document Store",
+      "JSON Data Type and Functions",
+      "Working with JSON in MySQL",
+      "Indexing JSON Data"
+    ],
+    "Working with MySQL in Node.js": [
+      "Connecting Node.js with MySQL",
+      "Performing CRUD Operations",
+      "Using MySQL Connection Pooling",
+      "Using ORM (Sequelize) with MySQL"
+    ],
+    "Testing and Debugging": [
+      "Debugging SQL Queries",
+      "Testing Database Queries with Jest and Mocha",
+      "Using Logs for Query Debugging",
+      "Using MySQL Slow Query Log"
+    ],
+    "Deploying MySQL in Production": [
+      "Deploying MySQL on AWS RDS, Azure, and Google Cloud",
+      "Containerizing MySQL with Docker",
+      "Using Kubernetes for MySQL Deployment",
+      "CI/CD for Database Changes"
+    ]
+  }
+}

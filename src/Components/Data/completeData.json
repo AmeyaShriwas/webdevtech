@@ -1,0 +1,51 @@
+{
+  "What is HTML?": {
+    "definition": "HTML stands for HyperText Markup Language. It is the standard language used to create and design web pages.",
+    "description": "HTML provides the structure of a webpage by defining elements like headings, paragraphs, images, links, and more. These elements are used to build the content that is displayed on a website.",
+    "how": "HTML is written in plain text, using tags enclosed in angle brackets (<>). These tags tell the browser how to display the content.",
+    "when": "HTML has been the foundation of web development since its creation in 1991 by Tim Berners-Lee.",
+    "example": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My First Web Page</title>\n  </head>\n  <body>\n    <h1>Welcome to My Website</h1>\n    <p>This is a paragraph of text.</p>\n  </body>\n</html>"
+  },
+  "History of HTML": {
+    "definition": "HTML was developed by Tim Berners-Lee in 1991 as a part of the World Wide Web project.",
+    "description": "HTML has evolved over the years, with each version adding new features and improvements. It started as a simple markup language and became more complex with the introduction of new HTML versions such as HTML 4.01, XHTML, and HTML5.",
+    "how": "The first version of HTML was created to allow text-based web documents with basic formatting. Over time, it was refined to support multimedia, JavaScript, and more interactive features.",
+    "when": "HTML was first introduced in 1991 and has been continuously updated, with the latest version being HTML5.",
+    "example": "HTML5 brought new elements like <article>, <section>, <nav>, <header>, and <footer>, which improved webpage structure."
+  },
+  "HTML Syntax": {
+    "definition": "HTML syntax refers to the rules and conventions for writing valid HTML code.",
+    "description": "HTML syntax consists of elements enclosed in tags. Each tag typically has an opening tag and a closing tag. Some tags are self-closing (like <img>), meaning they don't need a closing tag.",
+    "how": "HTML elements are written using angle brackets, and attributes are specified inside the opening tag. Elements are often nested within each other to create a document's structure.",
+    "when": "Correct syntax is necessary for browsers to interpret and render the HTML content properly.",
+    "example": "<h1>This is a Heading</h1>\n<p>This is a paragraph.</p>"
+  },
+  "Basic Structure of an HTML Document": {
+    "definition": "The basic structure of an HTML document includes a DOCTYPE declaration, the <html> tag, and essential child tags like <head> and <body>.",
+    "description": "Every HTML document begins with a DOCTYPE declaration, followed by the <html> tag. Inside <html>, the <head> contains meta-information about the page, while the <body> contains the visible content of the page.",
+    "how": "The <head> tag may contain elements like <title>, <meta>, and <link>. The <body> tag holds the actual content displayed on the page.",
+    "when": "This structure should be followed in every HTML document to ensure proper rendering by web browsers.",
+    "example": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>My Webpage</h1>\n    <p>Welcome to my webpage!</p>\n  </body>\n</html>"
+  },
+  "HTML Tags and Attributes": {
+    "definition": "HTML tags define the elements in a webpage, and attributes provide additional information about those elements.",
+    "description": "An HTML tag is a keyword enclosed in angle brackets. Attributes are additional properties written inside the opening tag and are used to define characteristics like the source of an image or the destination of a link.",
+    "how": "Attributes are always written in name-value pairs. The most common attributes are class, id, href, src, and alt.",
+    "when": "Tags and attributes are used to structure and provide metadata for content on webpages.",
+    "example": "<a href=\"https://www.example.com\">Visit Example</a>\n<img src=\"image.jpg\" alt=\"An image description\" />"
+  },
+  "HTML vs XHTML": {
+    "definition": "XHTML (Extensible Hypertext Markup Language) is a stricter version of HTML designed to work with XML.",
+    "description": "XHTML is essentially HTML written according to XML rules. While HTML allows flexibility in syntax, XHTML requires stricter adherence to rules such as closing all tags and using lower case letters.",
+    "how": "In XHTML, every element must be properly nested, and tags must be properly closed. It also requires attributes to be quoted.",
+    "when": "XHTML was introduced in 2000 and became the standard for a period. However, HTML5 is now the more commonly used version.",
+    "example": "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>XHTML Example</title>\n  </head>\n  <body>\n    <h1>Hello, XHTML</h1>\n  </body>\n</html>"
+  },
+  "How Browsers Render HTML": {
+    "definition": "Browsers render HTML by parsing the code and constructing a Document Object Model (DOM), which represents the structure of the webpage.",
+    "description": "When a browser receives an HTML document, it reads the HTML tags and builds a tree-like structure (DOM) that can be modified or interacted with by JavaScript and CSS. The rendering process involves parsing HTML, constructing the DOM, and then rendering the layout.",
+    "how": "Browsers interpret the HTML, CSS, and JavaScript code to visually display the webpage. They download resources (like images and fonts), layout the elements, and display them on the screen.",
+    "when": "The browser rendering process happens each time a user requests a webpage or interacts with it.",
+    "example": "If the HTML contains <h1>Hello World</h1>, the browser will render a large heading containing 'Hello World'."
+  }
+}

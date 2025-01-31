@@ -11,9 +11,12 @@ import {
   DialogTitle,
   IconButton,
   Button,
+  useMediaQuery,
 } from "@mui/material";
-import { Minimize, Close } from "@mui/icons-material";
+import { Minimize, Close, FileCopy } from "@mui/icons-material";
 import { jsPDF } from "jspdf";
+import { useTheme } from "@mui/material/styles";
+import completeData from "./../../Components/Data/completeData.json";
 
 function TopicPage({ jsonData, title }) {
   const [selectedTopic, setSelectedTopic] = useState(null);
@@ -21,6 +24,8 @@ function TopicPage({ jsonData, title }) {
   const [modalContent, setModalContent] = useState(null);
   const [isMinimized, setIsMinimized] = useState(false);
   const [isTopicSelected, setIsTopicSelected] = useState(false);
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleClick = (topic) => {
     const selected = jsonData[topic];
@@ -29,9 +34,13 @@ function TopicPage({ jsonData, title }) {
   };
 
   const handleModalOpen = (subTopic) => {
-    const content = jsonData[selectedTopic.title][subTopic];
-    setModalContent(content);
-    setModalOpen(true);
+    if (completeData[subTopic]) {
+      setModalContent(completeData[subTopic]);
+      setModalOpen(true);
+    } else {
+      setModalContent(null);
+      setModalOpen(false);
+    }
   };
 
   const handleModalClose = () => {
@@ -45,13 +54,19 @@ function TopicPage({ jsonData, title }) {
 
   const downloadPDF = () => {
     const doc = new jsPDF();
-    doc.text(modalContent, 10, 10);
-    doc.save(`${modalContent.substring(0, 10)}_details.pdf`);
+    doc.text(modalContent ? modalContent.definition : "No content", 10, 10);
+    doc.save(
+      `${modalContent ? modalContent.definition.substring(0, 10) : "NoContent"}_details.pdf`
+    );
   };
 
   const handleBack = () => {
     setIsTopicSelected(false);
     setSelectedTopic(null);
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(modalContent.example);
   };
 
   return (
@@ -104,17 +119,25 @@ function TopicPage({ jsonData, title }) {
                   <Card
                     onClick={() => handleModalOpen(subTopic)}
                     sx={{
-                      borderRadius: 2,
-                      boxShadow: 2,
-                      height: 100,
+                      borderRadius: 3,
+                      boxShadow: 4,
+                      height: 80,
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      background:
+                        "linear-gradient(135deg,rgb(245, 247, 250),rgb(214, 215, 216))",
+                      color: "black",
+                      transition: "transform 0.2s",
+                      cursor: "pointer",
+                      "&:hover": { transform: "scale(1.05)", boxShadow: 6 },
                     }}>
                     <CardContent sx={{ p: 1, textAlign: "center" }}>
                       <Typography
-                        variant="body2"
-                        sx={{ fontSize: 14, fontWeight: "bold" }}>
+                        sx={{
+                          fontSize: isSmallScreen ? 12 : 14,
+                          fontWeight: "bold",
+                        }}>
                         {subTopic}
                       </Typography>
                     </CardContent>
@@ -131,18 +154,25 @@ function TopicPage({ jsonData, title }) {
                 <Card
                   onClick={() => handleClick(topic)}
                   sx={{
-                    cursor: "pointer",
-                    borderRadius: 2,
-                    boxShadow: 2,
-                    height: 100,
+                    borderRadius: 3,
+                    boxShadow: 4,
+                    height: 80,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
+                    background:
+                      "linear-gradient(135deg,rgb(245, 247, 250),rgb(214, 215, 216))",
+                    color: "black",
+                    transition: "transform 0.2s",
+                    cursor: "pointer",
+                    "&:hover": { transform: "scale(1.05)", boxShadow: 6 },
                   }}>
                   <CardContent sx={{ p: 1, textAlign: "center" }}>
                     <Typography
-                      variant="body2"
-                      sx={{ fontSize: 14, fontWeight: "bold" }}>
+                      sx={{
+                        fontSize: isSmallScreen ? 12 : 14,
+                        fontWeight: "bold",
+                      }}>
                       {topic}
                     </Typography>
                   </CardContent>
@@ -155,12 +185,13 @@ function TopicPage({ jsonData, title }) {
       <Dialog
         open={modalOpen}
         onClose={handleModalClose}
-        maxWidth="md"
+        maxWidth="lg"
         fullWidth>
-        <DialogTitle>
+        <DialogTitle sx={{ backgroundColor: "#f5f5f5" }}>
           <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-            <Typography variant="h6">
-              {modalContent ? modalContent.substring(0, 15) : ""} Details
+            <Typography variant="h6" sx={{ color: "#1976d2" }}>
+              {modalContent ? modalContent.definition.substring(0, 15) : ""}{" "}
+              Details
             </Typography>
             <Box>
               <IconButton onClick={toggleMinimize}>
@@ -169,12 +200,50 @@ function TopicPage({ jsonData, title }) {
             </Box>
           </Box>
         </DialogTitle>
-        {!isMinimized && (
-          <DialogContent>
-            <Typography variant="body1">{modalContent}</Typography>
+        {!isMinimized && modalContent && (
+          <DialogContent sx={{ backgroundColor: "#f5f5f5" }}>
+            <Typography variant="body1" sx={{ marginBottom: 2 }}>
+              {modalContent.description}
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+              How: {modalContent.how}
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+              When: {modalContent.when}
+            </Typography>
+            <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+              Example:
+            </Typography>
+            <Box
+              sx={{
+                position: "relative",
+                backgroundColor: "#e0e0e0",
+                padding: 2,
+                borderRadius: 2,
+              }}>
+              <pre
+                style={{
+                  whiteSpace: "pre-wrap",
+                  wordBreak: "break-word",
+                  fontSize: "14px",
+                }}>
+                {modalContent.example}
+              </pre>
+              <IconButton
+                onClick={copyToClipboard}
+                sx={{
+                  position: "absolute",
+                  top: 8,
+                  right: 8,
+                  backgroundColor: "#ffffff",
+                  "&:hover": { backgroundColor: "#e0e0e0" },
+                }}>
+                <FileCopy />
+              </IconButton>
+            </Box>
           </DialogContent>
         )}
-        <DialogActions>
+        <DialogActions sx={{ backgroundColor: "#f5f5f5" }}>
           <Button onClick={downloadPDF} color="primary">
             Download PDF
           </Button>

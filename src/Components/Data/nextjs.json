@@ -1,0 +1,110 @@
+{
+  "Nextjs Topics": {
+    "Introduction to Next.js": [
+      "What is Next.js?",
+      "Features and Advantages of Next.js",
+      "Next.js vs React.js (Differences and Use Cases)",
+      "Installing Next.js and Setting Up the Project",
+      "Understanding the Project Structure in Next.js",
+      "Creating and Running a Next.js Application"
+    ],
+    "Pages and Routing in Next.js": [
+      "Understanding File-Based Routing",
+      "Creating Pages and Nested Routes",
+      "Dynamic Routes and Route Parameters",
+      "Catch-All Routes and Optional Catch-All Routes",
+      "Client-Side Navigation with useRouter",
+      "Redirects and Rewrites in Next.js"
+    ],
+    "Rendering and Data Fetching": [
+      "Different Rendering Strategies in Next.js",
+      "Server-Side Rendering (SSR)",
+      "Static Site Generation (SSG)",
+      "Incremental Static Regeneration (ISR)",
+      "Client-Side Rendering (CSR)",
+      "getServerSideProps (Fetching Data on the Server)",
+      "getStaticProps (Fetching Data at Build Time)",
+      "getStaticPaths (Dynamic Static Pages)",
+      "API Routes and Fetching Data from External APIs"
+    ],
+    "API Routes in Next.js": [
+      "Creating API Routes in Next.js",
+      "Handling Different HTTP Methods (GET, POST, PUT, DELETE)",
+      "Working with Query Parameters in API Routes",
+      "Middleware in API Routes",
+      "Authentication in API Routes",
+      "Connecting API Routes to Databases (MongoDB, MySQL, PostgreSQL)"
+    ],
+    "Styling in Next.js": [
+      "Using Global Styles with CSS and SCSS",
+      "Component-Level Styles with CSS Modules",
+      "Using Styled Components",
+      "Tailwind CSS Integration with Next.js",
+      "Best Practices for Styling in Next.js"
+    ],
+    "State Management in Next.js": [
+      "Using React Hooks for State Management",
+      "Context API in Next.js",
+      "Using Redux Toolkit with Next.js",
+      "Recoil and Zustand for State Management",
+      "Server-Side State Management"
+    ],
+    "Authentication and Authorization": [
+      "Implementing Authentication in Next.js",
+      "Using NextAuth.js for OAuth Authentication",
+      "JWT-Based Authentication",
+      "Session Management in Next.js",
+      "Role-Based Access Control (RBAC)"
+    ],
+    "Middleware and Custom Configurations": [
+      "Using Middleware in Next.js",
+      "Customizing the Next.js Config (next.config.js)",
+      "Environment Variables in Next.js",
+      "Custom Server with Express.js in Next.js"
+    ],
+    "Working with Databases": [
+      "Connecting Next.js to MongoDB using Mongoose",
+      "Using Prisma with Next.js for Database Management",
+      "CRUD Operations with Next.js and Databases",
+      "Using Firebase as a Backend for Next.js"
+    ],
+    "SEO Optimization in Next.js": [
+      "Using Next.js for SEO-Friendly Websites",
+      "Meta Tags and Open Graph Tags with next/head",
+      "Generating Dynamic Meta Tags for SEO",
+      "Sitemap and Robots.txt Configuration",
+      "Optimizing Page Speed and Performance"
+    ],
+    "Performance Optimization": [
+      "Image Optimization with Next.js Image Component",
+      "Code Splitting and Lazy Loading",
+      "Prefetching and Preloading Resources",
+      "Optimizing Fonts with next/font",
+      "Improving Performance with ISR and SSG"
+    ],
+    "Internationalization (i18n)": [
+      "Setting Up Internationalization in Next.js",
+      "Using next/router for Language Switching",
+      "Best Practices for Localizing Content"
+    ],
+    "Testing and Debugging": [
+      "Unit Testing in Next.js with Jest",
+      "Integration Testing with Cypress",
+      "Debugging Next.js Applications",
+      "Logging and Error Tracking with Sentry"
+    ],
+    "Building and Deploying Next.js Applications": [
+      "Building a Next.js Application for Production",
+      "Deploying Next.js on Vercel",
+      "Deploying on AWS, Netlify, and DigitalOcean",
+      "Using Docker for Next.js Deployment",
+      "CI/CD Pipelines for Next.js Applications"
+    ],
+    "Next.js Advanced Topics": [
+      "Custom Document (_document.js) and Custom App (_app.js)",
+      "Custom Error Pages (404 and 500 Pages)",
+      "Advanced Routing Techniques",
+      "Headless CMS Integration (Strapi, Contentful, Sanity)"
+    ]
+  }
+}

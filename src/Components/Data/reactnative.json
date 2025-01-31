@@ -1,0 +1,112 @@
+{
+  "React Native Topics": {
+    "Introduction to React Native": [
+      "What is React Native?",
+      "React Native vs React.js vs Flutter vs Native Development",
+      "Advantages and Limitations of React Native",
+      "Installing React Native CLI and Expo",
+      "Creating and Running a React Native Project",
+      "Understanding the Project Structure"
+    ],
+    "Core Components and Styling": [
+      "Understanding React Native Components",
+      "View, Text, and Image Components",
+      "ScrollView and FlatList for Lists",
+      "Button, TouchableOpacity, and Pressable",
+      "Styling with React Native Stylesheet",
+      "Flexbox for Layout in React Native",
+      "Using Styled Components in React Native",
+      "Handling Different Screen Sizes (Responsive UI)"
+    ],
+    "Navigation in React Native": [
+      "Introduction to React Navigation",
+      "Stack Navigation",
+      "Tab Navigation (Bottom Tabs and Material Tabs)",
+      "Drawer Navigation",
+      "Passing Data Between Screens",
+      "Deep Linking in React Native",
+      "Handling Navigation State"
+    ],
+    "State Management in React Native": [
+      "Using React Hooks (useState, useEffect, useContext)",
+      "Global State Management with Context API",
+      "Redux Toolkit for State Management",
+      "Recoil and Zustand for Lightweight State Management",
+      "Persisting Data with AsyncStorage"
+    ],
+    "Handling User Input and Forms": [
+      "TextInput Component and Handling User Input",
+      "Keyboard Avoidance Techniques",
+      "Using Formik for Form Management",
+      "Form Validation with Yup",
+      "Handling Forms with React Hook Form"
+    ],
+    "Working with APIs and Data Fetching": [
+      "Making Network Requests with Fetch and Axios",
+      "Handling API Responses and Errors",
+      "Using Async/Await for API Calls",
+      "Consuming REST APIs in React Native",
+      "Integrating GraphQL APIs with Apollo Client"
+    ],
+    "Working with Local Databases": [
+      "Using AsyncStorage for Local Storage",
+      "SQLite Database in React Native",
+      "Working with Realm for Offline Data Storage",
+      "Integrating Firebase Firestore Database"
+    ],
+    "Authentication and Authorization": [
+      "Implementing Email/Password Authentication",
+      "Using Firebase Authentication",
+      "OAuth with Google, Facebook, and Apple Sign-In",
+      "JWT Authentication in React Native",
+      "Securely Storing Authentication Tokens"
+    ],
+    "React Native Animations and Gestures": [
+      "Using Animated API for Animations",
+      "Reanimated Library for Complex Animations",
+      "Handling Gestures with React Native Gesture Handler",
+      "Using Lottie for Animated Graphics"
+    ],
+    "Push Notifications in React Native": [
+      "Setting Up Push Notifications with Firebase Cloud Messaging (FCM)",
+      "Local Notifications with React Native Notifications",
+      "Handling Background and Foreground Notifications",
+      "Deep Linking with Push Notifications"
+    ],
+    "Accessing Device Features": [
+      "Using Camera and Image Picker",
+      "Accessing Location with React Native Geolocation API",
+      "Handling Permissions in React Native",
+      "Using React Native Sensors (Accelerometer, Gyroscope, etc.)",
+      "Integrating Native Modules with Native Code (Android and iOS)"
+    ],
+    "Performance Optimization": [
+      "Improving Performance with React Native FastImage",
+      "Optimizing Lists with FlatList and VirtualizedList",
+      "Reducing Bundle Size with Hermes Engine",
+      "Avoiding Re-renders with useMemo and useCallback"
+    ],
+    "Testing and Debugging in React Native": [
+      "Debugging React Native Apps with React Developer Tools",
+      "Unit Testing with Jest and React Native Testing Library",
+      "End-to-End Testing with Detox",
+      "Error Tracking with Sentry",
+      "Using Flipper for Performance Monitoring"
+    ],
+    "Building and Deploying React Native Apps": [
+      "Building APK and IPA Files",
+      "Deploying Android App on Google Play Store",
+      "Deploying iOS App on Apple App Store",
+      "Setting Up CI/CD for React Native Apps",
+      "Code Signing and App Store Guidelines"
+    ],
+    "Advanced React Native Topics": [
+      "Creating Custom Native Modules",
+      "Deep Linking and App Links",
+      "Multilingual Support and Internationalization",
+      "Using WebViews in React Native",
+      "Implementing Dark Mode in React Native",
+      "Using TypeScript with React Native"
+    ]
+  }
+}
