@@ -85,7 +85,7 @@ const CodeEditor = () => {
             <Divider orientation="vertical" flexItem sx={{ mx: 2 }} />
           )}
 
-          {/* Output Section */}
+          {/* Output Sectionaa */}
           <Box sx={{ width: isMobile ? "100%" : "50%" }}>
             <Button variant="contained" onClick={handleRunCode} sx={{ mt: 2 }}>
               Run Code
